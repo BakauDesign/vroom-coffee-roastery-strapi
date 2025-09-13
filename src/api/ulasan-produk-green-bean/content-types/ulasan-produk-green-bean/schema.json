@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ulasan_produk_green_beans",
+  "info": {
+    "singularName": "ulasan-produk-green-bean",
+    "pluralName": "ulasan-produk-green-beans",
+    "displayName": "Ulasan Produk Green Bean"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "informasi_ulasan": {
+      "type": "component",
+      "component": "komponen-produk.ulasan",
+      "repeatable": false,
+      "required": true
+    },
+    "produk_green_bean": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::produk-green-bean.produk-green-bean",
+      "inversedBy": "ulasan_produk_green_beans"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_komponen_produk_produks",
+  "info": {
+    "displayName": "Produk",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi": {
+      "type": "text",
+      "required": true
+    },
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "highlight": {
+      "type": "text"
+    },
+    "aktif": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "highlighted": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

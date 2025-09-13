@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_komponen_produk_ulasans",
+  "info": {
+    "displayName": "Ulasan",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "lokasi": {
+      "type": "string",
+      "required": true
+    },
+    "rating": {
+      "type": "integer",
+      "required": true,
+      "default": 5,
+      "max": 5
+    },
+    "konten": {
+      "type": "text",
+      "required": true
+    },
+    "tampilkan": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "config": {}
+}

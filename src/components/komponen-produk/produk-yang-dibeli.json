@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_komponen_produk_produk_yang_dibelis",
+  "info": {
+    "displayName": "Produk Yang Dibeli",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "nama_produk": {
+      "type": "string",
+      "required": true
+    },
+    "varian_kemasan": {
+      "type": "string",
+      "required": true
+    },
+    "varian_harga": {
+      "type": "biginteger",
+      "required": true
+    },
+    "kuantitas": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "varian_berat": {
+      "type": "biginteger",
+      "required": true
+    }
+  },
+  "config": {}
+}

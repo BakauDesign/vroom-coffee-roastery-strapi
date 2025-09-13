@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_komponen_produk_rekomendasi_penyajians",
+  "info": {
+    "displayName": "Rekomendasi Penyajian",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

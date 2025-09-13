@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_komponen_produk_fitur_utamas",
+  "info": {
+    "displayName": "Fitur Utama",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "emoji": {
+      "type": "string",
+      "required": true
+    },
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

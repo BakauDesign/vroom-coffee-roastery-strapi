@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ulasan_produk_tools",
+  "info": {
+    "singularName": "ulasan-produk-tool",
+    "pluralName": "ulasan-produk-tools",
+    "displayName": "Ulasan Produk Tool"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "informasi_ulasan": {
+      "type": "component",
+      "component": "komponen-produk.ulasan",
+      "repeatable": false
+    },
+    "produk_tool": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::produk-tool.produk-tool",
+      "inversedBy": "ulasan_produk_tools"
+    }
+  }
+}

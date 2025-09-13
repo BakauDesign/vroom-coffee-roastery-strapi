@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produk_roasted_beans",
+  "info": {
+    "singularName": "produk-roasted-bean",
+    "pluralName": "produk-roasted-beans",
+    "displayName": "Produk Roasted Bean"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "informasi_produk": {
+      "type": "component",
+      "component": "komponen-produk.produk",
+      "repeatable": false,
+      "required": true
+    },
+    "daftar_rekomendasi_penyajian": {
+      "type": "component",
+      "component": "komponen-produk.rekomendasi-penyajian",
+      "repeatable": true,
+      "required": false
+    },
+    "asal": {
+      "type": "string",
+      "required": true
+    },
+    "proses": {
+      "type": "string",
+      "required": true
+    },
+    "catatan_tes": {
+      "type": "text",
+      "required": true
+    },
+    "kemasan": {
+      "type": "string",
+      "required": true
+    },
+    "ulasan_produk_roasted_beans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ulasan-produk-roasted-bean.ulasan-produk-roasted-bean",
+      "mappedBy": "produk_roasted_bean"
+    },
+    "daftar_varian_kemasan": {
+      "type": "component",
+      "component": "komponen-produk.varian-kemasan",
+      "repeatable": true
+    },
+    "nama_slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nama_slug",
+      "required": true
+    }
+  }
+}

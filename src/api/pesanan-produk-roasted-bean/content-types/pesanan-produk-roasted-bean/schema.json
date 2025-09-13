@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pesanan_produk_roasted_beans",
+  "info": {
+    "singularName": "pesanan-produk-roasted-bean",
+    "pluralName": "pesanan-produk-roasted-beans",
+    "displayName": "Pesanan Produk Roasted Bean"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_pembeli": {
+      "type": "string",
+      "required": true
+    },
+    "nomor_whatsapp": {
+      "type": "biginteger",
+      "required": true
+    },
+    "alamat": {
+      "type": "text",
+      "required": true
+    },
+    "catatan_kurir": {
+      "type": "text",
+      "required": false
+    },
+    "nomor_resi": {
+      "type": "text"
+    },
+    "status_pesanan": {
+      "type": "enumeration",
+      "required": true,
+      "default": "Menunggu Konfirmasi",
+      "enum": [
+        "Menunggu Konfirmasi",
+        "Menunggu Pembayaran",
+        "Diproses",
+        "Dikirim",
+        "Selesai",
+        "Dibatalkan"
+      ]
+    },
+    "nama_layanan_pengiriman": {
+      "type": "string",
+      "required": true
+    },
+    "biaya_pengiriman": {
+      "type": "biginteger",
+      "required": true
+    },
+    "total_biaya": {
+      "type": "biginteger",
+      "required": false
+    },
+    "produk_yang_dibeli": {
+      "type": "component",
+      "component": "komponen-produk.produk-yang-dibeli",
+      "repeatable": true,
+      "required": true
+    }
+  }
+}

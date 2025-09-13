@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produk_green_beans",
+  "info": {
+    "singularName": "produk-green-bean",
+    "pluralName": "produk-green-beans",
+    "displayName": "Produk Green Bean"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "informasi_produk": {
+      "type": "component",
+      "component": "komponen-produk.produk",
+      "repeatable": false,
+      "required": true
+    },
+    "ketinggian": {
+      "type": "integer",
+      "required": true
+    },
+    "varietas": {
+      "type": "string"
+    },
+    "asal": {
+      "type": "string",
+      "required": true
+    },
+    "proses": {
+      "type": "string",
+      "required": true
+    },
+    "kadar_air": {
+      "type": "decimal",
+      "required": false
+    },
+    "densitas": {
+      "type": "integer"
+    },
+    "cacat": {
+      "type": "string"
+    },
+    "ukuran_lubang_saringan": {
+      "type": "integer"
+    },
+    "level_roast": {
+      "type": "string"
+    },
+    "deskripsi_rasa": {
+      "type": "string"
+    },
+    "aktivitas_air": {
+      "type": "decimal"
+    },
+    "quaker": {
+      "type": "decimal"
+    },
+    "potensi_cupping": {
+      "type": "integer"
+    },
+    "nama_slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nama_slug",
+      "required": true
+    },
+    "ulasan_produk_green_beans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ulasan-produk-green-bean.ulasan-produk-green-bean",
+      "mappedBy": "produk_green_bean"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "layanan_pengirimans",
+  "info": {
+    "singularName": "layanan-pengiriman",
+    "pluralName": "layanan-pengirimans",
+    "displayName": "Layanan Pengiriman"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "biaya": {
+      "type": "biginteger",
+      "required": true
+    },
+    "aktif": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

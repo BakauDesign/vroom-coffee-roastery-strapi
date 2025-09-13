@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produk_tools",
+  "info": {
+    "singularName": "produk-tool",
+    "pluralName": "produk-tools",
+    "displayName": "Produk Tool"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "informasi_produk": {
+      "type": "component",
+      "component": "komponen-produk.produk",
+      "repeatable": false,
+      "required": true
+    },
+    "material": {
+      "type": "string",
+      "required": true
+    },
+    "kapasitas": {
+      "type": "string",
+      "required": true
+    },
+    "dimensi": {
+      "type": "string"
+    },
+    "kompatibilitas": {
+      "type": "string"
+    },
+    "pengaturan": {
+      "type": "string"
+    },
+    "aksesoris": {
+      "type": "string"
+    },
+    "kemasan": {
+      "type": "string",
+      "required": true
+    },
+    "daftar_fitur_utama": {
+      "type": "component",
+      "component": "komponen-produk.fitur-utama",
+      "repeatable": true
+    },
+    "ulasan_produk_tools": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ulasan-produk-tool.ulasan-produk-tool",
+      "mappedBy": "produk_tool"
+    },
+    "harga": {
+      "type": "biginteger",
+      "required": true
+    },
+    "stok": {
+      "type": "integer",
+      "required": true
+    },
+    "harga_diskon": {
+      "type": "biginteger",
+      "max": "0"
+    },
+    "diskon": {
+      "type": "integer",
+      "max": 100
+    },
+    "berat": {
+      "type": "biginteger",
+      "required": true
+    },
+    "nama_slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nama_slug",
+      "required": true
+    }
+  }
+}

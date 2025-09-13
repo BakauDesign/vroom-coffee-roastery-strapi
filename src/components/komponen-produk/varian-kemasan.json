@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_komponen_produk_varian_kemasans",
+  "info": {
+    "displayName": "Varian Kemasan",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "kemasan": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "harga": {
+      "type": "biginteger",
+      "required": true
+    },
+    "diskon": {
+      "type": "integer",
+      "required": false,
+      "max": 100
+    },
+    "harga_diskon": {
+      "type": "biginteger",
+      "required": false
+    },
+    "stok": {
+      "type": "biginteger",
+      "required": true
+    },
+    "berat": {
+      "type": "biginteger",
+      "required": true
+    }
+  },
+  "config": {}
+}
