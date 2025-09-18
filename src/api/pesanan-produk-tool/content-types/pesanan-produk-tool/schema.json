@@ -15,17 +15,13 @@
       "type": "string",
       "required": true
     },
-    "nomor_whatsapp": {
-      "type": "biginteger",
-      "required": true
-    },
     "alamat": {
       "type": "text",
       "required": true
     },
     "catatan_kurir": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "status_pesanan": {
       "type": "enumeration",
@@ -55,6 +51,10 @@
       "type": "component",
       "component": "komponen-produk.produk-yang-dibeli",
       "repeatable": true,
+      "required": true
+    },
+    "nomor_whatsapp": {
+      "type": "string",
       "required": true
     }
   }

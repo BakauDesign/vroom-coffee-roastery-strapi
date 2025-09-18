@@ -433,7 +433,7 @@ export interface ApiPesananProdukRoastedBeanPesananProdukRoastedBean
       Schema.Attribute.Required;
     nama_pembeli: Schema.Attribute.String & Schema.Attribute.Required;
     nomor_resi: Schema.Attribute.Text;
-    nomor_whatsapp: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    nomor_whatsapp: Schema.Attribute.String & Schema.Attribute.Required;
     produk_yang_dibeli: Schema.Attribute.Component<
       'komponen-produk.produk-yang-dibeli',
       true
@@ -473,7 +473,7 @@ export interface ApiPesananProdukToolPesananProdukTool
   attributes: {
     alamat: Schema.Attribute.Text & Schema.Attribute.Required;
     biaya_pengiriman: Schema.Attribute.BigInteger & Schema.Attribute.Required;
-    catatan_kurir: Schema.Attribute.Text & Schema.Attribute.Required;
+    catatan_kurir: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -486,7 +486,7 @@ export interface ApiPesananProdukToolPesananProdukTool
     nama_layanan_pengiriman: Schema.Attribute.String &
       Schema.Attribute.Required;
     nama_pembeli: Schema.Attribute.String & Schema.Attribute.Required;
-    nomor_whatsapp: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    nomor_whatsapp: Schema.Attribute.String & Schema.Attribute.Required;
     produk_yang_dibeli: Schema.Attribute.Component<
       'komponen-produk.produk-yang-dibeli',
       true

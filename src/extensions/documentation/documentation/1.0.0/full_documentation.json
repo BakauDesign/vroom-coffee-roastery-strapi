@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-09-13T10:20:23.289Z"
+    "x-generation-date": "2025-09-18T11:28:21.950Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -7023,22 +7023,17 @@
           "data": {
             "required": [
               "nama_pembeli",
-              "nomor_whatsapp",
               "alamat",
               "status_pesanan",
               "nama_layanan_pengiriman",
               "biaya_pengiriman",
-              "produk_yang_dibeli"
+              "produk_yang_dibeli",
+              "nomor_whatsapp"
             ],
             "type": "object",
             "properties": {
               "nama_pembeli": {
                 "type": "string"
-              },
-              "nomor_whatsapp": {
-                "type": "string",
-                "pattern": "^\\d*$",
-                "example": "123456789"
               },
               "alamat": {
                 "type": "string"
@@ -7078,6 +7073,9 @@
                 "items": {
                   "$ref": "#/components/schemas/KomponenProdukProdukYangDibeliComponent"
                 }
+              },
+              "nomor_whatsapp": {
+                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -7139,12 +7137,12 @@
         "type": "object",
         "required": [
           "nama_pembeli",
-          "nomor_whatsapp",
           "alamat",
           "status_pesanan",
           "nama_layanan_pengiriman",
           "biaya_pengiriman",
-          "produk_yang_dibeli"
+          "produk_yang_dibeli",
+          "nomor_whatsapp"
         ],
         "properties": {
           "id": {
@@ -7155,11 +7153,6 @@
           },
           "nama_pembeli": {
             "type": "string"
-          },
-          "nomor_whatsapp": {
-            "type": "string",
-            "pattern": "^\\d*$",
-            "example": "123456789"
           },
           "alamat": {
             "type": "string"
@@ -7199,6 +7192,9 @@
             "items": {
               "$ref": "#/components/schemas/KomponenProdukProdukYangDibeliComponent"
             }
+          },
+          "nomor_whatsapp": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -7503,11 +7499,6 @@
                 "nama_pembeli": {
                   "type": "string"
                 },
-                "nomor_whatsapp": {
-                  "type": "string",
-                  "pattern": "^\\d*$",
-                  "example": "123456789"
-                },
                 "alamat": {
                   "type": "string"
                 },
@@ -7546,6 +7537,9 @@
                   "items": {
                     "$ref": "#/components/schemas/KomponenProdukProdukYangDibeliComponent"
                   }
+                },
+                "nomor_whatsapp": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
@@ -7650,23 +7644,17 @@
           "data": {
             "required": [
               "nama_pembeli",
-              "nomor_whatsapp",
               "alamat",
-              "catatan_kurir",
               "status_pesanan",
               "nama_layanan_pengiriman",
               "biaya_pengiriman",
-              "produk_yang_dibeli"
+              "produk_yang_dibeli",
+              "nomor_whatsapp"
             ],
             "type": "object",
             "properties": {
               "nama_pembeli": {
                 "type": "string"
-              },
-              "nomor_whatsapp": {
-                "type": "string",
-                "pattern": "^\\d*$",
-                "example": "123456789"
               },
               "alamat": {
                 "type": "string"
@@ -7703,6 +7691,9 @@
                 "items": {
                   "$ref": "#/components/schemas/KomponenProdukProdukYangDibeliComponent"
                 }
+              },
+              "nomor_whatsapp": {
+                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -7764,13 +7755,12 @@
         "type": "object",
         "required": [
           "nama_pembeli",
-          "nomor_whatsapp",
           "alamat",
-          "catatan_kurir",
           "status_pesanan",
           "nama_layanan_pengiriman",
           "biaya_pengiriman",
-          "produk_yang_dibeli"
+          "produk_yang_dibeli",
+          "nomor_whatsapp"
         ],
         "properties": {
           "id": {
@@ -7781,11 +7771,6 @@
           },
           "nama_pembeli": {
             "type": "string"
-          },
-          "nomor_whatsapp": {
-            "type": "string",
-            "pattern": "^\\d*$",
-            "example": "123456789"
           },
           "alamat": {
             "type": "string"
@@ -7822,6 +7807,9 @@
             "items": {
               "$ref": "#/components/schemas/KomponenProdukProdukYangDibeliComponent"
             }
+          },
+          "nomor_whatsapp": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -8126,11 +8114,6 @@
                 "nama_pembeli": {
                   "type": "string"
                 },
-                "nomor_whatsapp": {
-                  "type": "string",
-                  "pattern": "^\\d*$",
-                  "example": "123456789"
-                },
                 "alamat": {
                   "type": "string"
                 },
@@ -8166,6 +8149,9 @@
                   "items": {
                     "$ref": "#/components/schemas/KomponenProdukProdukYangDibeliComponent"
                   }
+                },
+                "nomor_whatsapp": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
