@@ -17,8 +17,11 @@ export default {
       Component: async () => {
         const { App } = await import('./pages/App');
 
-        return App;
+        return {
+            default: App
+        };
       },
+      permissions: [],
     });
 
     app.registerPlugin({
