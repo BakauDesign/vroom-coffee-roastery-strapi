@@ -184,7 +184,7 @@ const CoffeeTool = ({ fetchClient }: { fetchClient: FetchClient }) => {
                             <Td><Typography textColor="neutral800">{order.total_biaya}</Typography></Td>
                             <Td><Typography textColor="neutral800">{new Date(order.createdAt).toLocaleDateString()}</Typography></Td>
                                 <Td>
-                                    <IconButton onClick={() => open(`https://api.whatsapp.com/send/?phone=${order.nomor_whatsapp}&text=${getWhatsAppTemplate_RoastedBeanOrder(order)}`)} label="Kirim Pesan" borderWidth={0}>
+                                    <IconButton onClick={() => open(`https://api.whatsapp.com/send/?phone=${order.nomor_whatsapp}&text=${getWhatsAppTemplate_ToolOrder(order)}`)} label="Kirim Pesan" borderWidth={0}>
                                         <Message />
                                     </IconButton>
                                 </Td>
