@@ -16,7 +16,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "strapi-plugin build",
+    "build": "strapi-plugin build --bundle",
     "watch": "strapi-plugin watch",
     "watch:link": "strapi-plugin watch:link",
     "verify": "strapi-plugin verify",
